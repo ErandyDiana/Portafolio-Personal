@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Diana Erandy 🌠</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/galaxy.png">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <a class="navbar-brand" href="#">
+              <img src="imagenes/galaxy.png" width="50" alt="Logo de la página web">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonios">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1>Hola, soy Erandy Diana</h1>
+    <strong>Desarrollo sitios web y soy diseñadora UX Ui</strong>
+
+    <h2 class="text-primary mb-4" id="typewriter"></h2>
+        
+        <div class="row">
+            <div autocomplete="off" id="form" class="form-row">
+              <h1>CONTACTO</h1>
+              <form action="https://formsubmit.co/modacolibri23@gmail.com" method="POST" onsubmit="return validar()">
+                  <div class="mb-3 input1">
+                    <label>Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-control">
+                  </div>
+                  
+                  <div class="mb-3 input1">
+                    <label>Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Correo" class="form-control">
+                    <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+                  </div>    
+          
+                  <div class="mb-3 input1">
+                    <label>Teléfono</label>
+                    <input type="text" id="tel" name="tel" placeholder="Telefono" class="form-control">
+                  </div>
+            
+                  
+                  <div class="mb-3 input1">
+                    <label>Comentarios</label>
+                    <textarea type="text" id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
+                  </div>
+              
+                  <div class="mb-3 input1">
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+                </div>  
+          
+                 </form> 
+          
+          
+                </div><!--class form- row-->
+              </div>
+       
+      
+      
+             
+          <script src="./js/main.js"></script>
+</body>
+</html>
