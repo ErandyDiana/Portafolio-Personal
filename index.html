@@ -1,83 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+      <!-- Metadatos --> 
     <meta charset="UTF-8">
+    <meta name="author" content="Erandy Diana">
+    <meta name="description" content="Portafolio de desarrollo web de Erandy Diana">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo -->
     <title>Portafolio | Diana Erandy 🌠</title>
-    <link rel="icon" type="image/x-icon" href="imagenes/galaxy.png">
-    <link href="style.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/laptop (3).png">
+     <!-- Fonts Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Merriweather+Sans:wght@300&family=Poppins:wght@600&display=swap" rel="stylesheet">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <!-- Iconos de Bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+     <!-- CSS -->
+     <link href="style.css" rel="stylesheet">
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+   </head>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light">
+  <section class ="inicio" id="inicio">
+      <!-- Barra de navegacion -->
+      <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbar-toggler">
             <a class="navbar-brand" href="#">
-              <img src="imagenes/galaxy.png" width="50" alt="Logo de la página web">
+             <!-- <img src="imagenes/binary-code (3).png" id = img1 width="50" alt="Logo de la página web"> -->
             </a>
             <ul class="navbar-nav d-flex justify-content-center align-items-center">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+                <a class="nav-link active" aria-current="page" id=so href="#sobre-mi">Sobre mí</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#proyectos">Proyectos</a>
+                <a class="nav-link" id=pro href="#proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#testimonios">Testimonios</a>
+                <a class="nav-link" id=ski href="#testimonios">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
+                <a class="nav-link" id=cont href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <h1>Hola, soy Erandy Diana</h1>
-    <strong>Desarrollo sitios web y soy diseñadora UX Ui</strong>
+    </section>
 
-    <h2 class="text-primary mb-4" id="typewriter"></h2>
-        
+      <section class ="inicio2" id="inicio2">
+        <div id="portada">
+          <h2 class ="hola" >
+            Hola
+            <br />
+            Soy Erandy,
+          </h2>
+        </div>  
+          <div id="portada2">
+          <h1 class ="titulo" style="font-size: 2.5rem;" >Desarrolladora Front-End y Diseñadora UX UI</h1>
+          </div>  
+          <div class="img">
+            <img src="/imagenes/e (2).jpeg" />
+          </div>
+        </section>
+
+      <section class="sobre-mi" id="sobre-mi">
+        <div class="titulo-sobre-mi">
+          <h2>SOBRE MI</h2>
+        </div>
+        <div class="cv">
+          <a id="cv" href="/docs/CV.pdf" download="cv">
+            CV
+          </a>
+        </div>
         <div class="row">
-            <div autocomplete="off" id="form" class="form-row">
-              <h1>CONTACTO</h1>
-              <form action="https://formsubmit.co/modacolibri23@gmail.com" method="POST" onsubmit="return validar()">
-                  <div class="mb-3 input1">
-                    <label>Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-control">
-                  </div>
-                  
-                  <div class="mb-3 input1">
-                    <label>Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="Correo" class="form-control">
-                    <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
-                  </div>    
-          
-                  <div class="mb-3 input1">
-                    <label>Teléfono</label>
-                    <input type="text" id="tel" name="tel" placeholder="Telefono" class="form-control">
-                  </div>
-            
-                  
-                  <div class="mb-3 input1">
-                    <label>Comentarios</label>
-                    <textarea type="text" id="mensaje" name="mensaje" cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
-                  </div>
-              
-                  <div class="mb-3 input1">
-                    <input type="submit" value="Enviar" class="btn btn-primary">
-                </div>  
-          
-                 </form> 
-          
-          
-                </div><!--class form- row-->
+          <div class="col-sm-6 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">¿QUIÉN SOY?</h5>
+                <p class="card-text">Ingeniera Ambiental y Desarrolladora Front-End, con habilidades en C, CSS, HTML5, JavaScript, Java, MySQL, Git, GitHub, Figma.
+                  Apasionada por el Front End el diseño, el arte y la música.
+                  Siempre con interes en desarrollar nuevas habilidades tecnológicas como UX/UI, Media Marketing, Music Maker y Mecatrónica Creativa.</p>
+                
               </div>
-       
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">MIS INTERESES</h5>
+                <p class="card-text">Me encanta el básquetbol y el tiro con arco, me fascina la ciencia y la tecnología al igual que la música y el arte, siempre estoy ideando y en busca de crear nuevas investigaciones y tecnologías para desarrollar proyectos de regeneración planetaria, muralista, apasionada de la comida y crear sabores extraordinarios basados en plantas...
+                </p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+        <section class="proyectos" id="proyectos">
+          <div class="titulo-proyectos">
+            <h2>PROYECTOS</h2>
+          </div>
+          <section class="pro1" id="pro1">
+
+            
+                <div class="cards">
+                  <h5 class="card-titulo" style="text-align: center; font-size: 30px;">E-commerce Colibrí</h5>
+                    <div class="image-container">
+                      <img
+                        id="html"
+                        src="\imagenes/html.png"
+                        class="card-img-top"
+                        alt="html5"
+                      >
+                      <img
+                        id="css"
+                        src="\imagenes/css.png"
+                        class="card-img-top"
+                        alt="css"
+                      >
+                      <img
+                        id="javascript"
+                        src="\imagenes/java-script.png"
+                        class="card-img-top"
+                        alt="javascript"
+                      >
+                      <img
+                        id="bootstrap"
+                        src="\imagenes/bootstrap.png"
+                        class="card-img-top"
+                        alt="bootstrap"
+                      >
+                
+                      <video width="800" height="500" autoplay controls>
+                        <source src="/docs/COLIBRÍ.mp4" type="video/mp4">
+                    </video>
+                      <div class="enlaces">
+                        <a href="" target="_blank">
+                          Web
+                        </a>
+                        <a href="" target="_blank">
+                          GitHub
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cards">
+                    <h5 class="card-titulo" style="text-align: center; font-size: 30px;">Calculadora</h5>
+                      <div class="image-container">
+                        <img
+                          id="html"
+                          src="\imagenes/html.png"
+                          class="card-img-top"
+                          alt="html5"
+                        >
+                        <img
+                          id="css"
+                          src="\imagenes/css.png"
+                          class="card-img-top"
+                          alt="css"
+                        >
+                        <img
+                          id="javascript"
+                          src="\imagenes/java-script.png"
+                          class="card-img-top"
+                          alt="javascript"
+                        >
+                        <img
+                          id="bootstrap"
+                          src="\imagenes/bootstrap.png"
+                          class="card-img-top"
+                          alt="bootstrap"
+                        >
+                  
+                        <video width="800" height="500" autoplay controls>
+                          <source src="/docs/COLIBRÍ.mp4" type="video/mp4">
+                      </video>
+                        <div class="enlaces">
+                          <a href="https://erandydiana.github.io/Calculadora.github.io/" target="_blank">
+                            Web
+                          </a>
+                          <a href="https://github.com/ErandyDiana/Calculadora.github.io" target="_blank">
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                     <div class="cards">
+                  <h5 class="card-titulo" style="text-align: center; font-size: 30px;">Galeria de Arte - AMARTE</h5>
+                    <div class="image-container">
+                      <img
+                        id="html"
+                        src="\imagenes/html.png"
+                        class="card-img-top"
+                        alt="html5"
+                      >
+                      <img
+                        id="css"
+                        src="\imagenes/css.png"
+                        class="card-img-top"
+                        alt="css"
+                      >
+                      <img
+                        id="javascript"
+                        src="\imagenes/java-script.png"
+                        class="card-img-top"
+                        alt="javascript"
+                      >
+                      <img
+                        id="bootstrap"
+                        src="\imagenes/bootstrap.png"
+                        class="card-img-top"
+                        alt="bootstrap"
+                      >
+                
+                      <video width="800" height="500" autoplay controls>
+                        <source src="/docs/" type="video/mp4">
+                    </video>
+                      <div class="enlaces">
+                        <a href="https://erandydiana.github.io/Calculadora.github.io/" target="_blank">
+                          Web
+                        </a>
+                        <a href="https://github.com/ErandyDiana/Calculadora.github.io" target="_blank">
+                          GitHub
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                   <div class="cards">
+                  <h5 class="card-titulo" style="text-align: center; font-size: 30px;">Clon página de inicio de Google</h5>
+                    <div class="image-container">
+                      <img
+                        id="html"
+                        src="\imagenes/html.png"
+                        class="card-img-top"
+                        alt="html5"
+                      >
+                      <img
+                        id="css"
+                        src="\imagenes/css.png"
+                        class="card-img-top"
+                        alt="css"
+                      >
+                      <img
+                        id="javascript"
+                        src="\imagenes/java-script.png"
+                        class="card-img-top"
+                        alt="javascript"
+                      >
+                      <img
+                        id="bootstrap"
+                        src="\imagenes/bootstrap.png"
+                        class="card-img-top"
+                        alt="bootstrap"
+                      >
+                
+                      <video width="800" height="500" autoplay controls>
+                        <source src="/docs/" type="video/mp4">
+                    </video>
+                      <div class="enlaces">
+                        <a href="https://erandydiana.github.io/Calculadora.github.io/" target="_blank">
+                          Web
+                        </a>
+                        <a href="https://github.com/ErandyDiana/Calculadora.github.io" target="_blank">
+                          GitHub
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cards">
+                    <h5 class="card-titulo" style="text-align: center; font-size: 30px;">Pádina de Productos</h5>
+                      <div class="image-container">
+                        <img
+                          id="html"
+                          src="\imagenes/html.png"
+                          class="card-img-top"
+                          alt="html5"
+                        >
+                        <img
+                          id="css"
+                          src="\imagenes/css.png"
+                          class="card-img-top"
+                          alt="css"
+                        >
+                        <img
+                          id="javascript"
+                          src="\imagenes/java-script.png"
+                          class="card-img-top"
+                          alt="javascript"
+                        >
+                        <img
+                          id="bootstrap"
+                          src="\imagenes/bootstrap.png"
+                          class="card-img-top"
+                          alt="bootstrap"
+                        >
+                  
+                        <video width="800" height="500" autoplay controls>
+                          <source src="/docs/Calculadora.mp4" type="video/mp4">
+                      </video>
+                        <div class="enlaces">
+                          <a href="https://erandydiana.github.io/Calculadora.github.io/" target="_blank">
+                            Web
+                          </a>
+                          <a href="https://github.com/ErandyDiana/Calculadora.github.io" target="_blank">
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                          </section>
+
+                              <section class="skills" id="skills">
+                                <div class="titulo-skills" >
+                                  <h2>SKILLS</h2>
+                                </div>
+                              
+                                <div class="cards1" style="margin: 0px; padding: 0px;  display: flex;
+                                margin-top: 90px; 
+                                align-items: center; 
+                                justify-content: center;">
+                                <!--margin-top: 90px; tamaño entre proyectos y el primer proyecto 
+                                align-items: center; /* Centrar verticalmente -->
+                                  <div class="card1" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body1">
+                                      <img
+                                        src="/imagenes/figma (1).png"
+                                        class="card-img-top1"
+                                        alt="figma"
+                                        style="width: 100px; height: 100px; right: 230px;">
+                                      <h5 class="card-title1" style="font-size: 15px;">FIGMA</h5>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="card1" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body1">
+                                      <img src="/imagenes/html-5-logotype.png" class="card-img-top1" alt="html5"
+                                      style="width: 100px; height: 100px; right: 230px;">
+                                      <h5 class="card-title1" style="font-size: 15px;">HTML5</h5>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="card1" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body1">
+                                      <img
+                                        src="/imagenes/css-3 (1).png"
+                                        class="card-img-top1"
+                                        alt="css"
+                                        style="width: 100px; height: 100px; right: 230px;">
+                                      <h5 class="card-title1" style="font-size: 15px;">CSS</h5>
+                                    </div>
+                                  </div>
+
+                                  <div class="card1" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body1">
+                                      <img
+                                        src="/imagenes/bootstrap.png"
+                                        class="card-img-top1"
+                                        alt="bootstrap"
+                                        style="width: 100px; height: 100px; right: 230px;">
+                                      <h5 class="card-title1" style="font-size: 15px; text-align: center;">BOOTSTRAP</h5>
+                                    </div>
+                                  </div>
+
+                                  <div class="card1" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body1">
+                                      <img src="/imagenes/java-script.png" class="card-img-top1" alt="javascript"
+                                      style="width: 100px; height: 100px; right: 230px;" >
+                                      <h5 class="card-title1" style="font-size: 15px;">JAVASCRIPT</h5>
+                                    </div>
+                                  </div>
+
+                                  <div class="card1" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body1">
+                                      <img src="/imagenes/java.png" class="card-img-top1" alt="java"
+                                      style="width: 100px; height: 100px; right: 230px;">
+                                      <h5 class="card-title1" style="font-size: 15px;">JAVA</h5>
+                                    </div>
+                                  </div>
+                            
+                                  <div class="card1" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body1">
+                                    <img src="/imagenes/git.png" class="card-img-top1" alt="git"
+                                    style="width: 100px; height: 100px; right: 230px;">
+                                      <h5 class="card-title1" style="font-size: 15px;">GIT</h5>
+                                    </div>
+                                  </div>
+
+                                  <div class="card1" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body1">
+                                      <img
+                                        src="/imagenes/github.png"
+                                        class="card-img-top1"
+                                        alt="github"
+                                        style="width: 100px; height: 100px; right: 230px;">
+                                      <h5 class="card-title1" style="font-size: 15px;">GITHUB</h5>
+                                    </div>
+                                  </div>
+
+                                </div>
+                            
+
+                               
+                                  
+                                <div class="cards2" style="margin: 0px; padding: 0px;  display: flex;
+                                margin-top: 90px; 
+                                align-items: center;
+                                justify-content: center;">
+
+                                  <div class="card2" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body2">
+                                      <h5 class="card-title2" style="font-size: 15px;">Mentalidad de crecimiento</h5>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="card2" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body2">
+                                      <h5 class="card-title2" style="font-size: 15px;">Liderazgo</h5>
+                                    </div>
+                                  </div>
+                              
+                                  <div class="card2" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body2">
+                                      <h5 class="card-title2" style="font-size: 15px;">Proactividad</h5>
+                                    </div>
+                                  </div>
+
+                                  <div class="card2" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body2">
+                                      <h5 class="card-title2" style="font-size: 15px; text-align: center;">Creatividad</h5>
+                                    </div>
+                                  </div>
+
+                                  <div class="card2" style="width: 8rem; height: 8rem; margin: 20px;">
+                                    <div class="card-body2">
+                                      <h5 class="card-title2" style="font-size: 15px;">Trabajo en equipo</h5>
+                                    </div>
+                                  </div> 
+                                </div> 
+                                </section>
+
+                                <section class="contacto" id="contacto">
+                                  <div class="title-contacto" >
+                                    <h2>CONTACTO</h2>
+                                  </div> 
+                                  <div class="container" id="form-contactame">
+                                    <div class="row">
+                                        <!-- formulario -->
+                                        <div class="form">
+                                        <div class="col-md-7 text-start ">
+                                            <div class="container text-center form-container">
+                                              <form action="https://formsubmit.co/vdyerand@gmail.com" method="POST"
+                                              onsubmit="return validar()" class="col">
+                                              <div class="mb-3 form-group">
+                                                  <label for="nombre" class="form-label texto-form">Nombre</label>
+                                                  <input type="text" class="form-control text-center" id="nombre" name="nombre">
+                                              </div>
+                                              <div class="mb-3 form-group">
+                                                  <label for="email" class="form-label texto-form">Correo</label>
+                                                  <input type="email" class="form-control text-center form-border" id="email" name="email">
+                                              </div>
+                                              <div class="mb-3 form-group">
+                                                  <label for="mensaje" class="form-label texto-form">Mensaje</label>
+                                                  <textarea class="form-control" id="mensaje" rows="5"></textarea>
+                                              </div>
+                                              <div class="row-12 text-center" style="padding-top: 25px;">
+                                                  <input type="submit" value="Enviar" class="btn btn-primary" id="btnEnviar">
+                                              </div>
+                                          </form>
+                                            </div>
+                                        </div> 
+                                      </div>
+                                      <div class="redes">
+                                        <h2 style="font-size: 15px; position: absolute;
+                                        top: 5730px;
+                                        left: 1000px"
+                                    >vdyerand@gmail.com</h2>
+                                        <div class="col-12 col-md-4">
+                                          <a href="mailto:vdyerand@gmail.com">
+                                            <button type="button" id="button1" style="position: absolute;
+                                            top: 5750px;
+                                            left: 1000px;">  
+                                              Correo
+                                              <i class="bi bi-envelope-fill"></i>
+                                            </button>
+                                          </a>
+                                        </div> 
+                                        <div class="col-12 col-md-4">
+                                          <a href="https://www.linkedin.com/in/erandydianadelgado/">
+                                            <img src="/imagenes/linkedin-logo.png" style="width: 90px; position: absolute;
+                                            top: 5850px;
+                                            left: 1035px;"></img>
+                                          </a>
+                                        </div> 
+                                        <div class="col-12 col-md-4">
+                                          <a href="https://github.com/ErandyDiana">
+                                            <img src="/imagenes/github.png" style="width: 90px; position: absolute;
+                                            top: 5950px;
+                                            left: 1035px"></img>
+                                              </a>
+                                        </div> 
+                                      </div>
+                                    </section>
+
+      </main>  
+                <!-- Pie de pagina (footer) -->
+              
+            <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
       
+      <div class="derechos-de-autor" style="text-align: center;">Creado por Diana Erandy (2023) &#169;</div>
       
-             
+  <a href="#inicio">
+    <img src="imagenes/up-arrow.png" style="width: 70px; position: absolute;
+    top: 6150px;
+    left: 1260px
+    " alt="flecha arriba">
+  </a>
+
+    </footer>
+    
           <script src="./js/main.js"></script>
 </body>
 </html>
