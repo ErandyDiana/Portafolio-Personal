@@ -696,3 +696,9 @@ body{
       max-width: 600px;
     }
   }
+  .footer-logo {
+  height: 170px;
+  width: 160px;
+  margin: 10px;
+  border-radius: 78px;
+}
