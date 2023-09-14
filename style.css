@@ -199,7 +199,6 @@ body{
   .experiencia .columna{
     border-radius: 2rem;
     padding: 2rem;
-    background: linear-gradient(145deg, #dadad8, #ffffff);
     box-shadow: 20px 20px 60px #cececc,
         -20px -20px 60px #ffffff;
   }
