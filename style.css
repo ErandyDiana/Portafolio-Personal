@@ -77,7 +77,7 @@ body{
     display: flex;
     justify-content: center; /* Center the text horizontally */
     align-items: center; /* Center the text vertically */
-    background: linear-gradient(90deg, #ff0000, #8400ff, #ff2d50, #8400ff, #ff2d50, #8400ff);
+    background: linear-gradient(90deg,#ff2d50, #8400ff, #ff0055, #ffb066, #ff2d50, #00ff9d);
     font-family: system-ui;
     font-size: 8vw; /* Use viewport units for font size */
     font-weight: 800;
