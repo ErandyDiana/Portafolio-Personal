@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(90deg, #843baf, #dd7ffa, #843baf);
+    background: linear-gradient(90deg, #f5a5ff, #c28bf7,#c2faa8, #d5a9ff);
   
   }
 /* Barra de navegacion */
@@ -38,9 +38,9 @@ body{
   .navbar{
     font-size: 2.5rem;
     font-family: system-ui;
-    background:  #771091;
+    background:  #000000;
     border-radius: 20px;
-    box-shadow: 1px 1px 6px 6px rgb(197, 255, 191);
+    box-shadow: 1px 1px 6px 6px rgb(200, 106, 255);
     text-align: center;
     padding: 0px;
   }
@@ -50,9 +50,9 @@ body{
     justify-content: space-between;  
     border-radius: 40px;
       margin: 1%; /*Es para que el titulo se vea centrado*/
-    font-size: 1.5rem;
-    background: linear-gradient(90deg, #27ffac, #27ffac);
-    background-color: #27ffac; /* En caso de que no funcione en algun navegador */
+    font-size: 2rem;
+    background: linear-gradient(90deg, #f52424, #b05ffc);
+    background-color: #66158b; /* En caso de que no funcione en algun navegador */
     text-align: center;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -63,6 +63,7 @@ body{
   font-family: 'Poppins', sans-serif;
   justify-content: space-between;
   }
+ 
   
   /* Estilos generales */
   
